@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/image/wwlogo.png"
+              src="/images/wwlogo.png"
               alt="Association Wonder Woman"
               width={74}
               height={74}
