@@ -1,14 +1,6 @@
 import Image from "next/image";
+import Container from "./_components/ui/Container";
 
 export default function Home() {
-  return (
-    <div>
-      <Image
-        src="/image/hero.jpeg"
-        fill
-        alt="festival picture"
-        className="object-cover"
-      />
-    </div>
-  );
+  return <Container>Home Page</Container>;
 }
