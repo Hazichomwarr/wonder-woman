@@ -4,19 +4,19 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full bg-[url('/images/hero.jpeg')] bg-cover bg-center">
+    <section className="relative w-full min-h-screen bg-[url('/images/hero.jpeg')] bg-cover bg-left">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto max-w-3xl px-4 text-center text-gray-200">
-          <h1 className="mb-6 font-bold leading-tight md:text-5xl">
+          <h1 className="mb-6 text-2xl font-bold leading-tight md:text-6xl">
             <span>Empowering Women.</span>
             <br />
-            <span className="ml-14"> Celebrating Culture.</span>
+            <span> Celebrating Culture.</span>
             <br />
-            <span className="ml-34"> Building Community.</span>
+            <span> Building Community.</span>
           </h1>
 
           <p className="mb-8 text-lg text-gray-200">
