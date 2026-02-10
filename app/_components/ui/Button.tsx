@@ -10,8 +10,8 @@ export default function Button({
 }) {
   const styles =
     variant === "primary"
-      ? "bg-black text-white hover:bg-neutral-800"
-      : "border bg-white hover: bg-neutral-50";
+      ? "bg-orange-600 text-white hover:bg-orange-700"
+      : "border bg-white hover:bg-neutral-50";
 
   return (
     <button className={`rounded px-4 py-2 text-sm ${styles}`} {...props}>

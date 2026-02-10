@@ -6,9 +6,8 @@ export type NavItem = { label: string; href: string };
 export const NAV_LINKS: NavItem[] = [
   { label: "Accueil", href: ROUTES.home },
   { label: "À propos", href: ROUTES.about },
-  { label: "Festival", href: "/festival" },
-  { label: "Mision", href: "/mission" },
-  { label: "Contact", href: "contact" },
+  { label: "Festival", href: ROUTES.festival },
+  { label: "Mission", href: ROUTES.mission },
 ];
 
 export const FOOTER_LINKS: NavItem[] = [
