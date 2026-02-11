@@ -1,13 +1,12 @@
 //_lib/nav.ts
 import { ROUTES } from "./siteRoutes";
 
-export type NavItem = { label: string; href: string };
+export type NavItem = { label: string; href: string; hash?: string };
 
 export const NAV_LINKS: NavItem[] = [
   { label: "Accueil", href: ROUTES.home },
-  { label: "À propos", href: ROUTES.about },
-  { label: "Festival", href: ROUTES.festival },
-  { label: "Mission", href: ROUTES.mission },
+  { label: "Festival", href: ROUTES.festival, hash: "#festival" },
+  { label: "Mission", href: ROUTES.mission, hash: "#mission" },
 ];
 
 export const FOOTER_LINKS: NavItem[] = [

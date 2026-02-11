@@ -6,7 +6,7 @@ export const ROUTES = {
   about: "/about",
   festival: "/festival",
   mission: "/mission",
-  participate: "/participer",
+  // participate: "/participer",
   contact: "/contact",
   legal: "/mentions-legales",
   privacy: "/politique-confidentialite",
