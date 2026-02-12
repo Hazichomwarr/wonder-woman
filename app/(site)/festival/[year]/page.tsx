@@ -14,9 +14,8 @@ import { notFound } from "next/navigation";
 import { ROUTES } from "../../../_lib/siteRoutes";
 
 // Demo data (replace later with content/festival.ts or CMS)
-type MediaItem =
-  | { type: "photo"; src: string; alt: string }
-  | { type: "video"; src: string; title: string };
+type MediaItemPhoto = { type: "photo"; src: string; alt: string };
+type MediaItemVideo = { type: "video"; src: string; title: string };
 
 type FestivalYear = {
   year: string;
@@ -24,14 +23,14 @@ type FestivalYear = {
   subtitle: string;
   cover: string;
   highlights: string[];
-  photos: MediaItem[];
-  videos: MediaItem[];
+  photos: MediaItemPhoto[];
+  videos: MediaItemVideo[];
 };
 
 const FESTIVAL_DATA: Record<string, FestivalYear> = {
-  "2024": {
-    year: "2024",
-    title: "Festival WONDER WOMAN — Édition 2024",
+  "2026": {
+    year: "2026",
+    title: "Festival WONDER WOMAN — Édition 2026",
     subtitle:
       "Une célébration des talents féminins, de la culture locale et de la communauté.",
     cover: "/images/hero.jpeg",
@@ -41,12 +40,21 @@ const FESTIVAL_DATA: Record<string, FestivalYear> = {
       "Jeux, trivia et moments communautaires",
       "Rencontres & partenariats",
     ],
-    photos: [],
+    photos: [
+      { type: "photo", src: "/event/event01.jpeg", alt: "Event 2026 - NYC" },
+    ],
+    videos: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        title: "Festival 2024 — Highlights (demo)",
+      },
+    ],
   },
 
   "2025": {
-    year: "2024",
-    title: "Festival WONDER WOMAN — Édition 2024",
+    year: "2025",
+    title: "Festival WONDER WOMAN — Édition 2025",
     subtitle:
       "Une célébration des talents féminins, de la culture locale et de la communauté.",
     cover: "/images/hero.jpeg",
@@ -102,7 +110,7 @@ const FESTIVAL_DATA: Record<string, FestivalYear> = {
     ],
   },
 
-  "2024": {
+  "2023": {
     year: "2023",
     title: "Festival WONDER WOMAN — Édition 2023",
     subtitle:
@@ -115,11 +123,6 @@ const FESTIVAL_DATA: Record<string, FestivalYear> = {
       "Activités communautaires",
     ],
     photos: [
-      // {
-      //   type: "photo",
-      //   src: "/festival/f15.jpeg",
-      //   alt: "Festival 2023 — Photo 1",
-      // },
       {
         type: "photo",
         src: "/festival/f16.jpeg",
@@ -344,7 +347,7 @@ export default async function Page({
                 <Link href={ROUTES.contact + "#participer"}>
                   <Button
                     variant="primary"
-                    className="!bg-orange-600 hover:!bg-orange-700"
+                    className="bg-orange-600! hover:bg-orange-700!"
                   >
                     Participer
                   </Button>
