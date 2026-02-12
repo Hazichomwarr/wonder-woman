@@ -38,7 +38,7 @@ export default function SectionFestival() {
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="relative h-56 overflow-hidden rounded-2xl shadow-sm sm:h-64">
               <Image
-                src="/images/hero.jpeg"
+                src="/festival/f2.jpeg"
                 alt="Festival Wonder Woman"
                 fill
                 className="object-cover"
@@ -47,7 +47,7 @@ export default function SectionFestival() {
             <div className="grid gap-4">
               <div className="relative h-26 overflow-hidden rounded-2xl shadow-sm sm:h-30">
                 <Image
-                  src="/images/hero.jpeg"
+                  src="/festival/f7.jpeg"
                   alt="Festival Wonder Woman"
                   fill
                   className="object-cover"
@@ -55,7 +55,7 @@ export default function SectionFestival() {
               </div>
               <div className="relative h-26 overflow-hidden rounded-2xl shadow-sm sm:h-30">
                 <Image
-                  src="/images/hero.jpeg"
+                  src="/festival/f3.jpeg"
                   alt="Festival Wonder Woman"
                   fill
                   className="object-cover"
