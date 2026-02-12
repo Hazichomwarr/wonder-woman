@@ -30,9 +30,15 @@ export default function Footer() {
           </div>
 
           <p className="text-xs text-white/60">
-            © {new Date().getFullYear()} WONDER WOMAN. Tous droits réservés.
-            <br />
-            {/* Created & Designed by Hamza Mare. */}
+            © {new Date().getFullYear()} WONDER WOMAN. Built by{" "}
+            <a
+              href="https://hazichomwarr.github.io/PRO_JOURNEY/"
+              target="_blank"
+              title="Web Developer"
+              className="underline hover:text-white"
+            >
+              Hamza Mare
+            </a>
           </p>
         </div>
       </Container>
