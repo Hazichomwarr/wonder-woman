@@ -32,7 +32,7 @@ export default function Footer() {
           <p className="text-xs text-white/60">
             © {new Date().getFullYear()} WONDER WOMAN. Built by{" "}
             <a
-              href="https://hazichomwarr.github.io/PRO_JOURNEY/"
+              href="https://hazichomwarr.github.io/portfolio/"
               target="_blank"
               title="Web Developer"
               className="underline hover:text-white"
