@@ -1,4 +1,5 @@
 // app/(site)/page.tsx
+import EventPopup from "../_components/EventPopup";
 import Hero from "../_components/Hero";
 import SectionCTA from "../_components/SectionCTA";
 import SectionFestival from "../_components/SectionFestival";
@@ -8,6 +9,7 @@ import SectionPrograms from "../_components/SectionPrograms";
 export default function Page() {
   return (
     <>
+      <EventPopup />
       <Hero />
       <SectionPillars />
       <SectionFestival />

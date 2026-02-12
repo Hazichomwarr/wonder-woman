@@ -1,4 +1,5 @@
 // _components/SectionPillars.tsx
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -78,6 +79,12 @@ export default function SectionPillars() {
               </CardContent>
             </Card>
           ))}
+          <Link
+            href="/mission"
+            className="font-light underline hover:text-red-600"
+          >
+            En Savoir plus
+          </Link>
         </div>
       </Container>
     </section>
