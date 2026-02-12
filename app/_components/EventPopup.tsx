@@ -9,8 +9,8 @@ export default function EventPopup() {
 
   useEffect(() => {
     const key = "ww_event_popup_dismissed_v1";
-    const dismissed = window.localStorage.getItem(key);
-    if (!dismissed) setOpen(true);
+    window.localStorage.getItem(key);
+    // if (!dismissed) setOpen(true);
   }, []);
 
   function close() {

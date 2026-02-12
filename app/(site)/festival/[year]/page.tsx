@@ -110,8 +110,8 @@ const FESTIVAL_DATA: Record<string, FestivalYear> = {
     ],
   },
 
-  "2023": {
-    year: "2023",
+  "2024": {
+    year: "2024",
     title: "Festival WONDER WOMAN — Édition 2023",
     subtitle:
       "Artistes, exposition, gastronomie et souvenirs partagés ensemble.",

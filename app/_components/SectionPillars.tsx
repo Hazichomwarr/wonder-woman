@@ -81,9 +81,9 @@ export default function SectionPillars() {
           ))}
           <Link
             href="/mission"
-            className="font-light underline hover:text-red-600"
+            className="font-light hover:text-red-600 hover:underline"
           >
-            En Savoir plus
+            En Savoir plus →
           </Link>
         </div>
       </Container>
