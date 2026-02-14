@@ -1,11 +1,18 @@
 // _components/AnouncementBar.tsx
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function AnnouncementBar() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setVisible(true);
+    }, 2500);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   if (!visible) return null;
 

@@ -66,7 +66,7 @@ export default function Page() {
 
             <div className="relative h-72 overflow-hidden rounded-2xl shadow-sm md:h-96">
               <Image
-                src="/images/hero.jpeg"
+                src="/festival/f1.jpeg"
                 alt="Wonder Woman"
                 fill
                 className="object-cover"
