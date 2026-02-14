@@ -109,12 +109,13 @@ export default function Page() {
             </div>
 
             {/* Poster */}
-            <div className="relative h-105 overflow-scroll rounded-2xl shadow-lg md:h-175">
+            <div className="relative rounded-2xl shadow-lg">
               <Image
-                src="/event/event01.jpeg"
+                src="/event/event02.jpg"
                 alt="Event Poster"
-                fill
-                className="object-cover"
+                width={545}
+                height={55}
+                className="object-cover rounded-2xl"
               />
             </div>
           </div>

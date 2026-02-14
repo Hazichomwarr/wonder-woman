@@ -8,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "../../_components/ui/Card";
-import Link from "next/link";
 import { SITE_INFOS } from "../../_lib/siteInfos";
 
 export default function Page() {
@@ -299,35 +298,6 @@ export default function Page() {
           </div>
         </Container>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-black py-10">
-        <Container>
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            <div className="text-white">
-              <p className="text-sm font-semibold">{SITE_INFOS.name}</p>
-              <p className="mt-1 text-xs text-white/70">{SITE_INFOS.tagline}</p>
-            </div>
-
-            <div className="flex flex-wrap gap-4 text-sm text-white/80">
-              <Link href="/mission" className="hover:text-white">
-                Mission
-              </Link>
-              <Link href="/festival" className="hover:text-white">
-                Festival
-              </Link>
-              <Link href="/contact" className="hover:text-white">
-                Contact
-              </Link>
-            </div>
-
-            <p className="text-xs text-white/60">
-              © {new Date().getFullYear()} {SITE_INFOS.name}. Tous droits
-              réservés.
-            </p>
-          </div>
-        </Container>
-      </footer>
     </div>
   );
 }

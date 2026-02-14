@@ -4,17 +4,16 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { CardContent } from "./ui/Card";
 
-const STORAGE_KEY = "ww_event_popup_dismissed_v1";
+// const STORAGE_KEY = "ww_event_popup_dismissed_v1";
 
 export default function EventPopup() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const dismissed = window.localStorage.getItem(STORAGE_KEY);
+    // const dismissed = window.localStorage.getItem(STORAGE_KEY);
     // If user previously dismissed, never open
-    if (dismissed === "1") return;
+    // if (dismissed === "1") return;
 
     //Delayed Popup display
     const timer = window.setTimeout(() => {
@@ -25,7 +24,7 @@ export default function EventPopup() {
   }, []);
 
   function close() {
-    window.localStorage.setItem(STORAGE_KEY, "1");
+    // window.localStorage.setItem(STORAGE_KEY, "1");
     setOpen(false);
   }
 
@@ -47,7 +46,7 @@ export default function EventPopup() {
           alt="Festival event brochure"
           width={110}
           height={55}
-          className="mt-4 mx-auto rounded-2xl shadow-2xl"
+          className="object-cover mt-4 mx-auto rounded-2xl shadow-2xl"
         />
         <p className="mt-2 text-sm text-neutral-600">
           Music • Food • Trivia • Community. Join us for a special edition in

@@ -46,7 +46,12 @@ const FESTIVAL_DATA: Record<string, FestivalYear> = {
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        src: "https://www.youtube.com/embed/WVtncw9TYZI",
+        title: "Festival 2024 — Highlights (demo)",
+      },
+      {
+        type: "video",
+        src: "https://www.youtube.com/embed/gdLVscm8V6M",
         title: "Festival 2024 — Highlights (demo)",
       },
     ],
@@ -99,13 +104,13 @@ const FESTIVAL_DATA: Record<string, FestivalYear> = {
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        src: "https://www.youtube.com/embed/WVtncw9TYZI",
         title: "Festival 2024 — Highlights (demo)",
       },
       {
         type: "video",
-        src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        title: "Festival 2024 — Performance (demo)",
+        src: "https://www.youtube.com/embed/gdLVscm8V6M",
+        title: "Festival 2024 — Highlights (demo)",
       },
     ],
   },
@@ -142,8 +147,13 @@ const FESTIVAL_DATA: Record<string, FestivalYear> = {
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        src: "https://www.youtube.com/embed/gdLVscm8V6M",
         title: "Festival 2023 — Highlights (demo)",
+      },
+      {
+        type: "video",
+        src: "https://www.youtube.com/embed/WVtncw9TYZI",
+        title: "Festival 2024 — Highlights (demo)",
       },
     ],
   },
