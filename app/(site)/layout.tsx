@@ -11,7 +11,7 @@ export default function SiteLayout({
 }) {
   return (
     <>
-      <AnnouncementBar />
+      {/* <AnnouncementBar /> */}
       <Navbar />
       <main>{children}</main>
       <Footer />

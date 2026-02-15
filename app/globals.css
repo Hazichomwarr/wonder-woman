@@ -28,3 +28,51 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  /* Fullscreen overlay container (keeps layout stable) */
+  .ui-overlay {
+    @apply fixed inset-0 z-[999] grid place-items-center p-4;
+  }
+
+  /* Dark backdrop */
+  .ui-overlay-backdrop {
+    @apply absolute inset-0 bg-black/50 transition-opacity duration-300;
+  }
+
+  /* Modal shell */
+  .ui-modal {
+    @apply relative w-full max-w-md rounded-2xl bg-white p-6 shadow-xl transition-all duration-300 ease-out;
+  }
+
+  /* State helpers */
+  .ui-open {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  .ui-closed {
+    @apply opacity-0 pointer-events-none;
+  }
+
+  /* Motion presets (pick one) */
+  .ui-from-down {
+    @apply translate-y-0; /* default when open */
+  }
+  .ui-from-down-closed {
+    @apply translate-y-4;
+  }
+
+  .ui-from-right {
+    @apply translate-x-0;
+  }
+  .ui-from-right-closed {
+    @apply translate-x-4;
+  }
+
+  .ui-scale {
+    @apply scale-100;
+  }
+  .ui-scale-closed {
+    @apply scale-95;
+  }
+}

@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto max-w-3xl px-4 text-center text-gray-200">
-          <h1 className="flex flex-col items-center gap-2 font-[cursive] mb-6 text-4xl font-bold leading-tight md:text-3xl">
+          <h1 className="flex flex-col items-center gap-2 font-[inter] mb-6 text-4xl font-bold leading-tight md:text-3xl">
             <span>Empowering Women</span>
             <span> Celebrating Culture</span>
             <span> Building Community</span>
