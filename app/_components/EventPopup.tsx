@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Transition from "./Transition";
+// import Transition from "./Transition";
 
 const STORAGE_KEY = "ww_event_popup_dismissed_v1";
 
@@ -35,8 +35,11 @@ export default function EventPopup() {
     router.push("/event/nyc-2026");
   }
 
-  //Event Date
-  const now = Date.now(); //current timeStamp in ms
+  //Event Date: This only runs once on the initial render
+  //(Lazy initialization)
+  const [now] = useState(() => Date.now());
+
+  //current timeStamp in ms
   const currentYear = new Date().getFullYear(); //Dynamic current year;
 
   //Define Feb 27 of the same year (month is 1 for February)

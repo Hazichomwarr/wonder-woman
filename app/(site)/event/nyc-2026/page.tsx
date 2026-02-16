@@ -123,9 +123,9 @@ export default function Page() {
       </section>
 
       {/* CTA */}
-      <section className="bg-neutral-900 py-14 text-white">
+      <section className="bg-neutral-900 py-8 rounded-xl text-white ">
         <Container>
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-around">
             <div>
               <h3 className="text-2xl font-bold">
                 Don’t miss this special edition.
@@ -139,6 +139,68 @@ export default function Page() {
               <a href={whatsapp} target="_blank">
                 <Button variant="primary">Reserve Now</Button>
               </a>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* GOALS */}
+      <section className="py-16">
+        <Container>
+          <div className="max-w-2xl">
+            <h3 className="text-3xl font-bold tracking-tight">Event Goals</h3>
+            <p className="mt-2 text-base  text-neutral-700">
+              Les objectifs spécifiques du Wonder Woman Africa International
+              Festival pour cet événement.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="border border-neutral-200 bg-white p-6 rounded-2xl shadow-sm">
+              <h4 className="text-lg font-semibold text-neutral-900">
+                Afrique - Diaspora
+              </h4>
+              <ul className="mt-4 pl-5 space-y-2 text-neutral-700 list-disc leading-relaxed marker:text-neutral-400">
+                <li>
+                  Célébrer et valoriser les femmes africaines et de la diaspora
+                </li>
+
+                <li>⁠ ⁠Renforcer les liens entre l’Afrique et la diaspora</li>
+                <li>⁠Promouvoir les produits locaux à l’international</li>
+                <li>⁠ ⁠Faire rayonner la culture africaine</li>
+              </ul>
+            </div>
+            <div className="border border-neutral-200 bg-white p-6 rounded-2xl shadow-sm">
+              <h4 className="text-lg font-semibold text-neutral-900">
+                Femmes - Famille
+              </h4>
+              <ul className="mt-4 space-y-2 pl-5 text-neutral-700 list-disc leading-relaxed marker:text-neutral-400">
+                <li>⁠ ⁠Promouvoir l’autonomisation et le leadership féminin</li>
+
+                <li>
+                  ⁠Offrir un espace de formation, de coaching et de
+                  transformation
+                </li>
+                <li>⁠Soutenir l’entrepreneuriat féminin</li>
+                <li>
+                  ⁠Promouvoir le bien-être, la santé et l’équilibre familial
+                </li>
+              </ul>
+            </div>
+            <div className="border border-neutral-200 bg-white p-6 rounded-2xl shadow-sm">
+              <h4 className="text-lg font-semibold text-neutral-900">
+                Solidarité - Effort
+              </h4>
+              <ul className="mt-4 space-y-2 pl-5 text-neutral-700 list-disc leading-relaxed marker:text-neutral-400">
+                <li>
+                  ⁠Encourager la solidarité, la sororité et l’engagement
+                  communautaire
+                </li>
+                <li>⁠Récompenser l’excellence et l’impact social</li>
+                <li>
+                  ⁠Positionner le festival comme un rendez-vous international
+                  incontournable
+                </li>
+              </ul>
             </div>
           </div>
         </Container>

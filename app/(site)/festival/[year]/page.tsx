@@ -277,7 +277,7 @@ export default async function Page({
                 Galerie {data.year}
               </h2>
               <p className="mt-3 text-sm text-neutral-600">
-                Cliquez pour agrandir (version lightbox à ajouter ensuite).
+                {/* Cliquez pour agrandir (version lightbox à ajouter ensuite). */}
               </p>
             </div>
           </div>
@@ -313,7 +313,7 @@ export default async function Page({
             Highlights & performances
           </h2>
           <p className="mt-3 text-sm text-neutral-600">
-            Démo avec vidéos embarquées (YouTube). Remplacez par vos liens.
+            {/* Démo avec vidéos embarquées (YouTube). Remplacez par vos liens. */}
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -336,7 +336,7 @@ export default async function Page({
                 <CardHeader>
                   <CardTitle>{v.title}</CardTitle>
                   <CardDescription>
-                    Ajoutez une courte description de cette vidéo si besoin.
+                    {/* No video description yet */}
                   </CardDescription>
                 </CardHeader>
               </Card>
