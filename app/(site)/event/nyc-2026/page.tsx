@@ -7,7 +7,7 @@ export default function Page() {
   const whatsapp = "https://wa.me/16462861955";
 
   return (
-    <div className="bg-white">
+    <div className="bg-neutral-100">
       {/* HERO */}
       <section className="relative bg-black text-white">
         <div className="absolute inset-0 opacity-40">
@@ -58,13 +58,17 @@ export default function Page() {
           <div className="grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl border p-6">
               <p className="text-xs font-semibold text-neutral-500">DATE</p>
-              <p className="mt-2 text-xl font-semibold">February 27</p>
+              <p className="mt-2 text-xl font-semibold text-black">
+                February 27
+              </p>
               <p className="text-sm text-neutral-600">8 PM</p>
             </div>
 
             <div className="rounded-2xl border p-6">
               <p className="text-xs font-semibold text-neutral-500">LOCATION</p>
-              <p className="mt-2 text-xl font-semibold">New York City</p>
+              <p className="mt-2 text-xl font-semibold text-black">
+                New York City
+              </p>
               <p className="text-sm text-neutral-600">405 W 125th Street</p>
             </div>
 
@@ -72,7 +76,9 @@ export default function Page() {
               <p className="text-xs font-semibold text-neutral-500">
                 PERFORMER
               </p>
-              <p className="mt-2 text-xl font-semibold">Le Magnific</p>
+              <p className="mt-2 text-xl font-semibold text-black">
+                Le Magnific
+              </p>
               <p className="text-sm text-neutral-600">
                 Live performance & entertainment
               </p>
@@ -82,7 +88,7 @@ export default function Page() {
       </section>
 
       {/* DETAILS */}
-      <section className="bg-neutral-50 py-16">
+      <section className=" bg-neutral-50 py-16">
         <Container>
           <div className="grid gap-10 md:grid-cols-2">
             <div>
@@ -103,7 +109,9 @@ export default function Page() {
                 </a>
 
                 <a href="tel:9293584124">
-                  <Button variant="secondary">Call second contact</Button>
+                  <Button variant="secondary" className="text-black">
+                    Call second contact
+                  </Button>
                 </a>
               </div>
             </div>
@@ -122,33 +130,13 @@ export default function Page() {
         </Container>
       </section>
 
-      {/* CTA */}
-      <section className="bg-neutral-900 py-8 rounded-xl text-white ">
-        <Container>
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-around">
-            <div>
-              <h3 className="text-2xl font-bold">
-                Don’t miss this special edition.
-              </h3>
-              <p className="mt-2 text-sm text-white/80">
-                Join us in New York for a unique celebration of African culture.
-              </p>
-            </div>
-
-            <div className="flex gap-3">
-              <a href={whatsapp} target="_blank">
-                <Button variant="primary">Reserve Now</Button>
-              </a>
-            </div>
-          </div>
-        </Container>
-      </section>
-
       {/* GOALS */}
       <section className="py-16">
         <Container>
           <div className="max-w-2xl">
-            <h3 className="text-3xl font-bold tracking-tight">Event Goals</h3>
+            <h3 className="text-3xl font-bold tracking-tight text-neutral-900">
+              Event Goals
+            </h3>
             <p className="mt-2 text-base  text-neutral-700">
               Les objectifs spécifiques du Wonder Woman Africa International
               Festival pour cet événement.
@@ -201,6 +189,27 @@ export default function Page() {
                   incontournable
                 </li>
               </ul>
+            </div>
+          </div>
+        </Container>
+      </section>
+      {/* CTA */}
+      <section className="bg-neutral-900 py-8 rounded-xl text-white ">
+        <Container>
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-around">
+            <div>
+              <h3 className="text-2xl font-bold">
+                Don’t miss this special edition.
+              </h3>
+              <p className="mt-2 text-sm text-white/80">
+                Join us in New York for a unique celebration of African culture.
+              </p>
+            </div>
+
+            <div className="flex gap-3">
+              <a href={whatsapp} target="_blank">
+                <Button variant="primary">Reserve Now</Button>
+              </a>
             </div>
           </div>
         </Container>

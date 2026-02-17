@@ -104,7 +104,7 @@ export default function Page() {
                       name="message"
                       placeholder="Dites-nous comment on peut vous aider…"
                       rows={6}
-                      className="mt-2 w-full resize-none rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm outline-none focus:border-orange-500"
+                      className="mt-2 w-full resize-none rounded-lg border border-neutral-200 bg-white text-black px-3 py-2 text-sm outline-none focus:border-orange-500"
                     />
                   </div>
 
@@ -115,7 +115,7 @@ export default function Page() {
 
                     <a
                       href={mailtoHref}
-                      className="inline-flex items-center justify-center rounded px-4 py-2 text-sm border bg-white hover:bg-neutral-100 active:scale-95 transition"
+                      className="inline-flex items-center justify-center rounded px-4 py-2 text-sm text-black border bg-white hover:bg-neutral-100 active:scale-95 transition"
                     >
                       Envoyer par Email
                     </a>

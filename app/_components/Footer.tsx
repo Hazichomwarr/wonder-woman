@@ -30,6 +30,7 @@ export default function Footer() {
           </div>
 
           <p className="text-xs text-white/60">
+            {" "}
             © {new Date().getFullYear()} WONDER WOMAN. Built by{" "}
             <a
               href="https://hazichomwarr.github.io/portfolio/"
