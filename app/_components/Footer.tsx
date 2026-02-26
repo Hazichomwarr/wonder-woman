@@ -33,7 +33,7 @@ export default function Footer() {
             {" "}
             © {new Date().getFullYear()} WONDER WOMAN. Built by{" "}
             <a
-              href="https://hazichomwarr.github.io/portfolio/"
+              href="https://hamzamare.dev"
               target="_blank"
               title="Web Developer"
               className="underline hover:text-white"
