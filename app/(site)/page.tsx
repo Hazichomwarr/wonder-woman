@@ -9,7 +9,7 @@ import SectionPrograms from "../_components/SectionPrograms";
 export default function Page() {
   return (
     <>
-      <EventPopup />
+      {/* <EventPopup /> */}
       <Hero />
       <SectionPillars />
       <SectionFestival />

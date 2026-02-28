@@ -7,7 +7,7 @@ import { ROUTES } from "../_lib/siteRoutes";
 
 export default function SectionFestival() {
   return (
-    <section id="festival" className="bg-neutral-300 py-16">
+    <section id="festival" className="py-16">
       <Container>
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>

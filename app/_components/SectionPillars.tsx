@@ -81,7 +81,7 @@ export default function SectionPillars() {
           ))}
           <Link
             href="/mission"
-            className=" px-3 py-2 rounded-sm w-fit bg-orange-600 font-light hover:bg-orange-700 hover:underline"
+            className="text-white px-3 py-2 rounded-sm w-fit bg-orange-600 font-light hover:bg-orange-700 hover:underline"
           >
             En Savoir plus →
           </Link>

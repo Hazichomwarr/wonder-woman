@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <AnnouncementBar />
+      {/* <AnnouncementBar /> */}
       <header className="absolute inset-x-0 top-0 z-50 from-black/40 to-transparent">
         <Container>
           {/* LOGO */}
@@ -50,12 +50,6 @@ export default function Navbar() {
 
             {/* CTA */}
             <div className="flex items-center gap-2">
-              <Link
-                href="/event/nyc-2026"
-                className="rounded-full px-6 py-2 text-sm text-white bg-orange-600 font-medium hover:bg-orange-700"
-              >
-                Event
-              </Link>
               <Link
                 href={ROUTES.contact}
                 className="rounded-full border border-neutral-200 px-4 py-2 text-sm font-medium text-neutral-300 hover:bg-neutral-400 hover:text-white"
