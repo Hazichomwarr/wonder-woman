@@ -14,7 +14,7 @@ import Container from "./ui/Container";
 
 export default function SectionPrograms() {
   return (
-    <section id="programs" className="bg-neutral-300 py-10">
+    <section id="programs" className="bg-neutral-100 py-10">
       <Container>
         <div className="grid gap-10 md:grid-cols-2 md:items-start">
           <div>

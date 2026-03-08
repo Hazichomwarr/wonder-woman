@@ -47,7 +47,7 @@ const PILLARS = [
 
 export default function SectionPillars() {
   return (
-    <section id="mission" className="bg-neutral-300 py-16">
+    <section id="mission" className="bg-neutral-100 py-16">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold tracking-wide text-orange-700">
